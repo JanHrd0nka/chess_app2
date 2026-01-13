@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chess Game</title>
+    <meta name="description" content="A web-based chess game for two players on the same computer. Save and load games.">
+    <meta name="author" content="Your Name">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+</head>
+<body>
+    <h1>Chess Game</h1>
+
+    <div id="promotion-overlay">
+        <p>Select Piece:</p>
+        <div id="promotion-buttons"></div>
+    </div>
+
+    
+    <div id="main-container">
+        <div id="left-panel">
+            <div id="game-status-top" class="game-status"></div>
+            <div id="chessboard"></div>
+            <div id="game-status-bottom" class="game-status"></div>
+        </div>
+
+        <div id="right-panel">
+            <div class="button-row">
+                <button id="newGameBtn">New Game</button>
+                <button id="loadGameBtn">Load Game</button>
+                <button id="saveGameBtn">Save Game</button>
+            </div>
+
+            <div id="move-history">
+            </div>
+
+            <div class="button-row">
+                <button id="toStartBtn">⏮</button>
+                <button id="stepBackBtn">◀</button>
+                <button id="stepForwardBtn">▶</button>
+                <button id="toEndBtn">⏭</button>
+            </div>
+
+            <div class="button-row">
+                <button id="resignWhiteBtn">Resign White</button>
+                <button id="drawBtn">Draw</button>
+                <button id="resignBlackBtn">Resign Black</button>
+            </div>
+        </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
